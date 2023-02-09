@@ -1,0 +1,142 @@
+body{
+   /* Set line spacing */
+   line-height: 150%;
+   margin-left: 80px;
+   
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 3% 8% 6% 3%;
+    margin: 0px 0px 0px 40px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline;
+    margin: 60px;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: peachpuff;
+
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    /* Set color - is it blue or do we need to make it a different color? */
+    color: black;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    text-underline-offset: 15px;
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-family: 'Merriweather';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 4rem;
+   
+
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: Anton;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 100%;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 2rem;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-bottom: 3%;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    border-radius: 25px;
+    margin: 0 20px 0 20px;
+    background-color: steelblue;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    
+
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    width: auto;
+    margin: 20px 0 20px 0; /* why is this offsetting my image */
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 10px 0px 10px grey;
+}
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+    box-shadow: -10px 0px 10px grey;
+
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 10px 0px 10px grey, -10px 0px 10px grey;
+
+}
+    
+
+p + p {
+     /* Set indentation */
+     margin-left: 20px;
+
+  }
+  
+p{
+     /* Set margin */
+     margin-bottom: 5px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    line-height: 150%;
+    margin-left: 40px;
+    list-style-image: url('../images/sketchbook.png');
+}
